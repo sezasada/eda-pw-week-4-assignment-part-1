@@ -19,6 +19,7 @@ function helloName( name ) {
 }
 // Remember to call the function to test
 console.log( helloName());
+// Function returns 'Seb' as the name. 
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber ) {
@@ -46,13 +47,13 @@ function isPositive( number ) {
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say false', isPositive(0) );
+console.log( 'isPositive - should say false', isPositive(1) );
 console.log( 'isPositive - should say false', isPositive(-3) );
-
+// Any positive numbers will return true, any negative numbers will return false. 
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-let a = ['seb', 'g', 'six'];
+let a = ['seb', 'g', 6];
 const v = 0;
 function getLast( a ) {
   if (v <= a.length) {
@@ -63,6 +64,7 @@ function getLast( a ) {
   }
 }
 console.log(getLast(a));
+// Only the last item in the array wil be logged to the console. 
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
@@ -71,6 +73,8 @@ let j = [10, 2, 3 ];
 function find(value, array) {
   for( let x = 0; x < array.length; x++) {
     if( value == array[x]) {
+      console.log(value);
+      // Not sure if we are supposed to log the value as well. I can delete the console.log if needed. 
       return true;
     }
   }
