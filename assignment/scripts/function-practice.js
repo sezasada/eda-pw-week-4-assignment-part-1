@@ -58,17 +58,21 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 let a = ['seb', 'g', 6];
+let r = [];
+let w = [ 'does', 'this', 'work' ];
 const v = 0;
-function getLast( a ) {
-  if (v <= a.length) {
-    return a[a.length -1];
+function getLast( array ) {
+  if (v <= array.length) {
+    return array[array.length -1];
   }
   else {
     return 'undefined';
   }
 }
 console.log(getLast(a));
-console.log('last item should return 6', getLast(a));
+console.log(getLast(r));
+console.log(getLast(w));
+
 // Only the last item in the array wil be logged to the console. 
 
 // 7. Function to find a value in an array. Return true if the 
@@ -86,6 +90,10 @@ function find(value, array) {
   return false;
 }
 console.log(find(10, j));
+console.log(find(3, j));
+console.log(find(2, j));
+console.log(find(25, j));
+console.log(find('seven', j));
 
 // ----------------------
 // Stretch Goals
