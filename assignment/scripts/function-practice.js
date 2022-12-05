@@ -68,6 +68,7 @@ function getLast( a ) {
   }
 }
 console.log(getLast(a));
+console.log('last item should return 6', getLast(a));
 // Only the last item in the array wil be logged to the console. 
 
 // 7. Function to find a value in an array. Return true if the 
