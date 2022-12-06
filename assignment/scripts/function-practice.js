@@ -21,21 +21,19 @@ function helloName( name ) {
 // Remember to call the function to test
 helloName('Seb');
 // Function returns 'Seb' as the name. 
-const answer = 0;
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
-  console.log(firstNumber);
-  return answer;
+function addNumbers(numberOne, numberTwo) {
+  return numberOne + numberTwo;
   // return firstNumber + secondNumber;
 }
-addNumbers(2 +2);
+console.log(addNumbers(2,2));
+
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( multiply ){
-  console.log(multiply);
-  return answer;
+function multiplyThree( numberOne, numberTwo, numberThree ) {
+  return numberOne * numberTwo * numberThree;
 }
-multiplyThree( 3 * 3 * 3 );
+console.log(multiplyThree(3,3,3));
 
 
 
